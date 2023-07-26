@@ -1,4 +1,5 @@
 using BulkyBookWeb.Data;
+using BulkyBookWeb.Data.IRepository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<BooksDbContext>(opt=>opt.UseInMemoryDatabase("BulkyBooks"));
+//AddScoped is generally use with Database
 builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
 builder.Services.AddRazorPages();
 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using BulkyBookWeb.Models;
 
-namespace BulkyBookWeb.Data
+namespace BulkyBookWeb.Data.IRepository
 {
     public class CoverTypeRepository : Repository<CoverType>, ICoverTypeRepository
     {
@@ -16,7 +16,7 @@ namespace BulkyBookWeb.Data
         }
         public void Update(CoverType obj)
         {
-            db.Update(obj);
+            db.coverTypes.Update(obj);
         }
     }
 }

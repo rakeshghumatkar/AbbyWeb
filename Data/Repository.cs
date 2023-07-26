@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace BulkyBookWeb.Data
+namespace BulkyBookWeb.Data.IRepository
 {
     public class Repository<T> : IRepository<T> where T : class
     {

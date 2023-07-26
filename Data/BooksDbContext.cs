@@ -9,10 +9,11 @@ namespace BulkyBookWeb.Data
 {
     public class BooksDbContext : DbContext 
     {
-        public BooksDbContext(DbContextOptions<BooksDbContext> option ) : base(option)
+        public BooksDbContext(DbContextOptions<BooksDbContext> option) : base(option)
         {  
         }
         public DbSet<Category> categories {get; set;}
         public DbSet<CoverType> coverTypes {get; set;}
+        public DbSet<FoodType> foodTypes {get; set;}
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using BulkyBookWeb.Models;
 
-namespace BulkyBookWeb.Data
+namespace BulkyBookWeb.Data.IRepository
 {
     public interface ICategoryRepository : IRepository<Category>
     {

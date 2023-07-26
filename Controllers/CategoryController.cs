@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using BulkyBookWeb.Data;
+using BulkyBookWeb.Data.IRepository;
 using BulkyBookWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -113,9 +114,6 @@ namespace BulkyBookWeb.Controllers
             TempData["success"] = "Deleted successfully";
             return RedirectToAction("Index");
         }
-
-
-
     
     }
 }

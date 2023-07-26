@@ -6,13 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace BulkyBookWeb.Views.Shared
+namespace BulkyBookWeb.Views.FoodType
 {
-    public class _Notification : PageModel
+    public class Index : PageModel
     {
-        private readonly ILogger<_Notification> _logger;
+        private readonly ILogger<Index> _logger;
 
-        public _Notification(ILogger<_Notification> logger)
+        public Index(ILogger<Index> logger)
         {
             _logger = logger;
         }
