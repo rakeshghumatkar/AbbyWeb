@@ -1,5 +1,5 @@
 @page
-@model IEnumerable<FoodType>
+@model BulkyBookWeb.Views.FoodType.Index
 
 
 <div class="container p-3">
@@ -31,9 +31,7 @@
         </tr>
     </thead>
     <tbody>
-        @if(Model!= null)
-        {
-            @foreach (var obj in Model)
+        @foreach (var obj in Model.foodTypes.ToList())
             {
                 <tr>
                     <td width="50%">
@@ -47,7 +45,6 @@
                     </td>
                 </tr>
             }
-        }
     </tbody> 
    
 </table>

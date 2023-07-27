@@ -10,7 +10,7 @@ namespace BulkyBookWeb.Data.IRepository
     public class Repository<T> : IRepository<T> where T : class
     {
         private readonly BooksDbContext db;
-        internal DbSet<T> dbSet ;
+        public DbSet<T> dbSet ;
         public Repository(BooksDbContext _db)
         {
             db = _db;
